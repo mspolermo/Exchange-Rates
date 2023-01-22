@@ -1,6 +1,67 @@
+*{
+    background-color: #333232;
+    color: #bfbcbb;
+    margin: 0px;
+    padding: 0px;
+}
+
 .fetch-example {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
     border: 2px solid gray;
     border-radius: 2px
+}
+#btnCenter {
+    height: 16px;
+    width: 16px;
+    border: 2px solid gray;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 16px;
+    position: fixed;
+    left: 414px;
+    top: 10px;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.currency-row {
+    border: 2px solid gray;
+    border-radius: 2px;
+    line-height: 60px;
+    margin-top: 20px;
+    height: 60px;
+    width: 190px;
+}
+.currency-info {
+    float: left;
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 2px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+#dollar {
+    float: left;  
+}
+#euro {
+    float: left;
+    margin-left: 10px;
+}
+#btnCenter:hover {
+    cursor: pointer;
+    background-color: #bfbcbb;
+    color: #333232;
+    border-radius: 4px;
+}
+.currency-info:hover {
+    cursor: pointer;
+    background-color: #bfbcbb;
+    color: #333232;
+    border-radius: 4px; 
 }

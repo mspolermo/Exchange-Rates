@@ -15,7 +15,6 @@ async function getCurrencies (){
   }catch{
 console.log('Сервер не отвечает(')
   }
-
 };
 
 getCurrencies ();
