@@ -4,9 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+.none {
+    display: none;
+}
 
 .fetch-example {
-    width: 400px;
+    width: 440px;
     height: 150px;
     margin: 10px;
     padding: 10px;
@@ -21,7 +24,7 @@
     text-align: center;
     line-height: 16px;
     position: fixed;
-    left: 414px;
+    left: 454px;
     top: 10px;
 }
 h2{
@@ -34,9 +37,9 @@ h2{
     line-height: 60px;
     margin-top: 20px;
     height: 60px;
-    width: 190px;
+    width: 210px;
 }
-.currency-info {
+#currency-info-left {
     float: left;
     margin: 10px;
     border: 2px solid gray;
@@ -49,19 +52,58 @@ h2{
 #dollar {
     float: left;  
 }
+#currency-info-right {
+    float: left;
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 2px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+}
 #euro {
     float: left;
     margin-left: 10px;
 }
-#btnCenter:hover {
-    cursor: pointer;
-    background-color: #bfbcbb;
-    color: #333232;
-    border-radius: 4px;
+#currency-container1 {
+position: fixed;
+margin: 10px;
+border-left: 2px solid gray;;
+border-radius: 2px;
+height: 35px;
+width: 185px;
+text-align: center;
+line-height: 35px;
+
 }
-.currency-info:hover {
-    cursor: pointer;
-    background-color: #bfbcbb;
-    color: #333232;
-    border-radius: 4px; 
+.currency-change {
+    float: left; 
+    border: 2px solid gray;
+    border-radius: 2px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px; 
+    border-left: 0px;
+
+
 }
+    #btnCenter:hover {
+        cursor: pointer;
+        background-color: #bfbcbb;
+        color: #333232;
+        border-radius: 4px;
+    }
+    .currency-change:hover {
+        cursor: pointer;
+        background-color: #bfbcbb;
+        color: #333232;
+        border-radius: 2px; 
+    }
+    #currency-info-right:hover {
+        cursor: pointer;
+        background-color: #bfbcbb;
+        color: #333232;
+        border-radius: 4px; 
+    }
