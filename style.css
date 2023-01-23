@@ -49,7 +49,7 @@ h2{
     text-align: center;
     line-height: 35px;
 }
-#dollar {
+#left-box {
     float: left;  
 }
 #currency-info-right {
@@ -62,7 +62,7 @@ h2{
     text-align: center;
     line-height: 35px;
 }
-#euro {
+#right-box {
     float: left;
     margin-left: 10px;
 }
