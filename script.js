@@ -40,85 +40,100 @@ getCurrencies ();
 
 const leftCurency= document.querySelector("#currency-info-left");
 const leftContainer = document.querySelector("#currency-container-left");
-const USD = document.querySelector("#USD");
-const EUR = document.querySelector("#EUR");
-const GBP = document.querySelector("#GBP");
-const PLN = document.querySelector("#PLN");
-const GEL = document.querySelector("#GEL");
-
-function hideChangeTableLeft() {
-  leftContainer.classList.add('none');
-};
+// const USD = document.querySelector("#USD");
+// const EUR = document.querySelector("#EUR");
+// const GBP = document.querySelector("#GBP");
+// const PLN = document.querySelector("#PLN");
+// const GEL = document.querySelector("#GEL");
 
 leftCurency.addEventListener('click', function(){
   leftContainer.classList.remove('none');
 });
 
-USD.addEventListener('click', function(){
-  hideChangeTableLeft();
-  leftCurency.innerText = USD.innerText;
-  getCurrencies ();
+function currencyClick (currency, container) {
+  currency.addEventListener('click', function(){
+    if (container == 'left') {
+    leftContainer.classList.add('none');
+    leftCurency.innerText = currency.innerText;
+    getCurrencies ();
+  }else if(container == 'right') {
+    rightContainer.classList.add('none');
+    rightCurency.innerText = currency.innerText;
+    getCurrencies ();
+  }
+  ;
 });
-EUR.addEventListener('click', function(){
-  hideChangeTableLeft();
-  leftCurency.innerText = EUR.innerText;
-  getCurrencies ();
-});
-GBP.addEventListener('click', function(){
-  hideChangeTableLeft();
-  leftCurency.innerText = GBP.innerText;
-  getCurrencies ();
-});
-PLN.addEventListener('click', function(){
-  hideChangeTableLeft();
-  leftCurency.innerText = PLN.innerText;
-  getCurrencies ();
-});
-GEL.addEventListener('click', function(){
-  hideChangeTableLeft();
-  leftCurency.innerText = GEL.innerText;
-  getCurrencies ();
-});
+}
+
+currencyClick(USD, 'left');
+currencyClick(EUR, 'left');
+currencyClick(GBP, 'left');
+currencyClick(PLN, 'left');
+currencyClick(GEL, 'left');
 
 
 const rightCurency= document.querySelector("#currency-info-right");
 const rightContainer = document.querySelector("#currency-container-right");
-const CNY = document.querySelector("#CNY");
-const INR = document.querySelector("#INR");
-const KRW = document.querySelector("#KRW");
-const TRY = document.querySelector("#TRY");
-const KZT = document.querySelector("#KZT");
-
-function hideChangeTableRight() {
-  rightContainer.classList.add('none');
-};
 
 rightCurency.addEventListener('click', function(){
   rightContainer.classList.remove('none');
 });
 
-CNY.addEventListener('click', function(){
-  hideChangeTableRight();
-  rightCurency.innerText = CNY.innerText;
-  getCurrencies ();
-});
-INR.addEventListener('click', function(){
-  hideChangeTableRight();
-  rightCurency.innerText = INR.innerText;
-  getCurrencies ();
-});
-KRW.addEventListener('click', function(){
-  hideChangeTableRight();
-  rightCurency.innerText = KRW.innerText;
-  getCurrencies ();
-});
-TRY.addEventListener('click', function(){
-  hideChangeTableRight();
-  rightCurency.innerText = TRY.innerText;
-  getCurrencies ();
-});
-KZT.addEventListener('click', function(){
-  hideChangeTableRight();
-  rightCurency.innerText = KZT.innerText;
-  getCurrencies ();
-});
+currencyClick(CNY, 'right');
+currencyClick(INR, 'right');
+currencyClick(KRW, 'right');
+currencyClick(TRY, 'right');
+currencyClick(KZT, 'right');
+
+// EUR.addEventListener('mouseover', function(){
+//   document.querySelector('#EUR').innerText = ('EUR');
+// });
+// EUR.addEventListener('mouseleave', function(){
+//   document.querySelector('#EUR').innerText = ('€');
+// });
+
+
+
+
+
+
+
+
+// const CNY = document.querySelector("#CNY");
+// const INR = document.querySelector("#INR");
+// const KRW = document.querySelector("#KRW");
+// const TRY = document.querySelector("#TRY");
+// const KZT = document.querySelector("#KZT");
+
+
+
+
+
+
+
+
+// CNY.addEventListener('click', function(){
+//   hideChangeTableRight();
+//   rightCurency.innerText = CNY.innerText;
+//   getCurrencies ();
+// });
+// INR.addEventListener('click', function(){
+//   hideChangeTableRight();
+//   rightCurency.innerText = INR.innerText;
+//   getCurrencies ();
+// });
+// KRW.addEventListener('click', function(){
+//   hideChangeTableRight();
+//   rightCurency.innerText = KRW.innerText;
+//   getCurrencies ();
+// });
+// TRY.addEventListener('click', function(){
+//   hideChangeTableRight();
+//   rightCurency.innerText = TRY.innerText;
+//   getCurrencies ();
+// });
+// KZT.addEventListener('click', function(){
+//   hideChangeTableRight();
+//   rightCurency.innerText = KZT.innerText;
+//   getCurrencies ();
+// });
