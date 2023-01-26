@@ -30,7 +30,8 @@ async function getCurrencies (){
 
     leftElement.innerText=leftRate;
     rightElement.innerText=rightRate;
-
+    
+    document.querySelector('#curretDate').innerText=data.Date.split("").reverse().splice([15]).reverse().join("");
   }catch{
 console.log('Сервер не отвечает(')
   }
