@@ -10,21 +10,21 @@
 </head>
 <body>
     <div class="fetch-example">
-        <div id="btnCenter">-</div>
+        <div class="btnCenter">-</div>
         <h2>Курсы валют</h2>
         <div class="currency-box">
-            <div class="currency-row" id="left-box">
-                <div id="currency-container-left" class="currency-container none">
+            <div class="currency-row left">
+                <div class="currency-container none" id="currency-container-left" >
                     <div class="currency-change" id="USD">&#36;</div>
                     <div class="currency-change" id="EUR">&#8364;</div>
                     <div class="currency-change" id="GBP">&#163;</div>
                     <div class="currency-change" id="PLN">z&#x142;</div>
                     <div class="currency-change" id="GEL">&#8382;</div>
                 </div>
-                <div class="currency-change" id="currency-info-left">&#36;</div>
-                <span id="currency-value-left">76</span> рублей
+                <div class="currency-change first-view " id="currency-info-left">&#36;</div>
+                <span id="currency-value-left">-</span> рублей
             </div>
-            <div class="currency-row" id="right-box">
+            <div class="currency-row">
                 <div id="currency-container-right" class="currency-container none" >
                     <div class="currency-change" id="CNY">&#165;</div>
                     <div class="currency-change" id="INR">&#8360;</div>
@@ -32,15 +32,12 @@
                     <div class="currency-change" id="TRY">&#8378;</div>
                     <div class="currency-change" id="KZT">&#8376;</div>
                 </div>
-                <div class="currency-change" id="currency-info-right">&#165;</div>
-                <span id="currency-value-right">76</span> рублей
+                <div class="currency-change first-view" id="currency-info-right">&#165;</div>
+                <span id="currency-value-right">-</span> рублей
             </div>
-            <div>Дата:</div>
-            <div id="curretDate"></div>
+            <div class="date" id="currentDate">Проблема с подключением к серверу</div>
         </div>
     </div>
     <script src="./script.js"></script>
 </body>
 </html>
-
-
